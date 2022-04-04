@@ -6,7 +6,6 @@
 
   <ItemGroup>
     <Folder Include="Enumerable\" />
-    <Folder Include="DTOS\" />
     <Folder Include="Excepciones\" />
   </ItemGroup>
 
