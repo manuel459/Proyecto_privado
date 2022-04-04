@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32228.343
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Api", "SocialMedia.Api\SocialMedia.Api.csproj", "{3F2826FD-4280-4420-BC45-3E52E7FE3724}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Core", "SocialMedia.Core\SocialMedia.Core.csproj", "{91AC1C45-812F-4878-8FD7-D4489DBF21E5}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.Infraestructure", "SocialMedia.Infraestructure\SocialMedia.Infraestructure.csproj", "{BD3FE9CF-7788-458B-A4CD-57D3B23AB0DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{0B36BF4E-5287-43FD-BE32-F8E562699E3C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocialMedia.UnitTests", "SocialMedia.UnitTests\SocialMedia.UnitTests.csproj", "{6644410F-6C20-44DD-AC74-A6FA41486703}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocialMedia.IntegrationTests", "SocialMedia.IntegrationTests\SocialMedia.IntegrationTests.csproj", "{4A9D90FF-5057-4331-B159-E341AB85D211}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3F2826FD-4280-4420-BC45-3E52E7FE3724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F2826FD-4280-4420-BC45-3E52E7FE3724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F2826FD-4280-4420-BC45-3E52E7FE3724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F2826FD-4280-4420-BC45-3E52E7FE3724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91AC1C45-812F-4878-8FD7-D4489DBF21E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91AC1C45-812F-4878-8FD7-D4489DBF21E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91AC1C45-812F-4878-8FD7-D4489DBF21E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91AC1C45-812F-4878-8FD7-D4489DBF21E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BD3FE9CF-7788-458B-A4CD-57D3B23AB0DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BD3FE9CF-7788-458B-A4CD-57D3B23AB0DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BD3FE9CF-7788-458B-A4CD-57D3B23AB0DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BD3FE9CF-7788-458B-A4CD-57D3B23AB0DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6644410F-6C20-44DD-AC74-A6FA41486703}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6644410F-6C20-44DD-AC74-A6FA41486703}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6644410F-6C20-44DD-AC74-A6FA41486703}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6644410F-6C20-44DD-AC74-A6FA41486703}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A9D90FF-5057-4331-B159-E341AB85D211}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A9D90FF-5057-4331-B159-E341AB85D211}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A9D90FF-5057-4331-B159-E341AB85D211}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A9D90FF-5057-4331-B159-E341AB85D211}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{6644410F-6C20-44DD-AC74-A6FA41486703} = {0B36BF4E-5287-43FD-BE32-F8E562699E3C}
+		{4A9D90FF-5057-4331-B159-E341AB85D211} = {0B36BF4E-5287-43FD-BE32-F8E562699E3C}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B3E02F2A-2053-4DD3-A002-14BE7CF95068}
+	EndGlobalSection
+EndGlobal
