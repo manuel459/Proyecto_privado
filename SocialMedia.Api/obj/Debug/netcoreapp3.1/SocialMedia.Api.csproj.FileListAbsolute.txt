@@ -66,3 +66,6 @@ C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.
 C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.pdb
 C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\AutoMapper.dll
+C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\bin\Debug\netcoreapp3.1\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+C:\Users\Usuario\source\repos\SocialMedia\SocialMedia.Api\obj\Debug\netcoreapp3.1\SocialMedia.Api.MvcApplicationPartsAssemblyInfo.cs

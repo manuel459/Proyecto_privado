@@ -22,28 +22,11 @@ namespace SocialMedia.Infraestructure.Repositories
         public async Task<IEnumerable<Post>> Get()
         {
             var lst = await _context.Posts.ToListAsync();
-            var lstDto = lst.Select(x=> new PostDtos 
-            {
-                PostId = x.PostId,
-                Date = x.Date,
-                Description = x.Description,
-                Image = x.Image,
-                UserId = x.UserId
-            });
             return lst;
         }
 
         public async Task<Post> GetPost(int id) {
-            var lst = await _context.Posts.FirstOrDefaultAsync(x=> x.UserId == id);
-
-            var postDtos = new PostDtos
-            {
-                PostId = lst.PostId,
-                Date = lst.Date,
-                Description = lst.Description,
-                Image = lst.Image,
-                UserId = lst.UserId
-            };
+            var lst = await _context.Posts.FirstOrDefaultAsync(x=> x.PostId == id);
             return lst;
         }
 
@@ -52,5 +35,36 @@ namespace SocialMedia.Infraestructure.Repositories
             _context.Posts.Add(post);
              await _context.SaveChangesAsync();
         }
+
+
+        public async Task<bool> Update(Post post)   
+        {
+            var current = await GetPost(post.PostId);
+            current.Date = post.Date;
+            current.Description = post.Description;
+            current.Image = post.Image;
+
+           var rows = await _context.SaveChangesAsync();
+            return rows > 0;
+        }
+
+        public async Task<bool> Delete(int id) 
+        {
+            var current = await GetPost(id);
+            _context.Posts.Remove(current);
+            int rows = await _context.SaveChangesAsync();
+
+            return rows > 0;
+        }
+
+        public async Task<List<Post>> GetPostId(int id)
+        {
+            var lst = await (from o in _context.Posts
+                       where o.UserId==id
+                       select o).ToListAsync();
+            return lst;
+        }
+
+       
     }
 }

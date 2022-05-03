@@ -9,7 +9,8 @@ namespace SocialMedia.Core.Interfaces
     public interface IComentario
     {
         Task<IEnumerable<Comment>> GetComentarios();
-        Task<Comment> GetComment(int id);
+        Task<Comment> GetForId(int id);
         Task InsertComment(Comment comment);
+        //Task<bool> Update (Comment comment);
     }
 }

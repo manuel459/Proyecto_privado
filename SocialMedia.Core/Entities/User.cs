@@ -23,5 +23,10 @@ namespace SocialMedia.Core.Entities
 
         public virtual ICollection<Comment> Comments { get; set; }
         public virtual ICollection<Post> Posts { get; set; }
+
+        internal bool count()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

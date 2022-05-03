@@ -1,3 +1,4 @@
+using AutoMapper;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -8,6 +9,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using SocialMedia.Core.Interfaces;
+using SocialMedia.Core.Services;
 using SocialMedia.Infraestructure.Data;
 using SocialMedia.Infraestructure.Repositories;
 using System;
@@ -29,7 +31,8 @@ namespace SocialMedia.Api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-
+            //Automapper
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
             services.AddControllers();
 
             //Para el contexto de base de datos se usa SQL y se conecta con la configuration
@@ -39,8 +42,9 @@ namespace SocialMedia.Api
 
             //Configuracion del servicio para definir la inyeccion
             services.AddTransient<IPostRepository, PostRepository>();
-            services.AddTransient<IUsuarioRepository, UsuarioRepository>();
+            services.AddTransient<IUserRepository, UserRepository>();
             services.AddTransient<IComentario, ComentarioRepossitory>();
+            services.AddTransient<IPostService,PostServices>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

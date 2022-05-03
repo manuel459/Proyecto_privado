@@ -25,7 +25,7 @@ namespace SocialMedia.Infraestructure.Repositories
             return lst;
         }
         
-        public async Task<Comment> GetComment(int id)
+        public async Task<Comment> GetForId(int id)
         {
             var post = await _context.Comments.FirstOrDefaultAsync(x=>x.CommentId == id);
             return post;
@@ -38,5 +38,6 @@ namespace SocialMedia.Infraestructure.Repositories
             await _context.SaveChangesAsync();
         }
 
+        
     }
 }

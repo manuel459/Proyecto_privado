@@ -30,7 +30,7 @@ namespace SocialMedia.Api.Controllers
 
         public async Task<IActionResult> GetComment(int id) 
         {
-            var post = await _comentario.GetComment(id);
+            var post = await _comentario.GetForId(id);
             return Ok(post);
         }
 
